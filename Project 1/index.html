@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website Complete</title>
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+<!----------------------- Navigation Part ----------------------->
+  <nav>
+    <h3>Sandip</h3>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skill">Skills</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+
+<!----------------------- Home Part ----------------------->
+  <div class="home" id="home">
+    <div class="homeLeft">
+      <h1>Hi,<br>I'm <span class="blueText">Sandip</span><br>Web Developer</h1>
+      <button class="contactBtn">Contact</button>
+
+      <div class="socialicons">
+        <a href="https://www.linkedin.com/company/basifyorg/posts/?feedView=all" target="_blank">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/basifyorg" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://basify-portfolio.netlify.app/" target="_blank">
+          <i class="fa-solid fa-link"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="homeRight">
+      <img src="img/profile.png" alt="profile">
+    </div>
+  </div>
+
+
+<!----------------------- About Part ----------------------->
+  <div class="about" id="about">
+    <h2 class="heading">About</h2>
+
+    <div class="aboutContent">
+      <div class="aboutLeft">
+        <img src="img/about.jpg" alt="about">
+      </div>
+
+      <div class="aboutRight">
+        <h3 class="subHead">I'm Sandip</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda,
+          quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus
+          atque.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+<!----------------------- Skills Part ----------------------->
+  <div class="skill" id="skill">
+    <h2 class="heading">Skills</h2>
+
+    <div class="aboutContent">
+      <div class="skillRight">
+        <h3 class="subHead">Profesional Skills</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.
+        </p>
+
+        <div class="skills-container">
+          <div class="skill-box">
+            <div class="skill-header">
+              <i class="fa-brands fa-html5"class="skill-icon"></i>
+              <span>HTML5</span>
+              <span class="percentage">95%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 95%;"></div>
+            </div>
+          </div>
+      
+          <div class="skill-box">
+            <div class="skill-header">
+              <i class="fa-brands fa-css3-alt" class="skill-icon"></i>
+              <span>CSS3</span>
+              <span class="percentage">85%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 85%;"></div>
+            </div>
+          </div>
+      
+          <div class="skill-box">
+            <div class="skill-header">
+              <i class="fa-brands fa-js" class="skill-icon"></i>
+              <span>JavaScript</span>
+              <span class="percentage">65%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 65%;"></div>
+            </div>
+          </div>
+      
+          <div class="skill-box">
+            <div class="skill-header">
+              <i class="fa-solid fa-pen" class="skill-icon"></i>
+              <span>UX/UI</span>
+              <span class="percentage">85%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 85%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skillLeft">
+        
+      </div>
+    </div>
+  </div>
+
+
+<!----------------------- Work Part ----------------------->
+  <div class="work" id="work">
+    <h2 class="heading">Work</h2>
+
+    <div class="workContent">
+      <div class="workLeft">
+        <div class="img-container">
+          <img src="img/work1.jpg" alt="work1">
+        </div>
+        <div class="img-container">
+          <img src="img/work2.jpg" alt="work2">
+        </div>
+        <div class="img-container">
+          <img src="img/work3.jpg" alt="work3">
+        </div>
+      </div>
+
+      <div class="workRight">
+        <div class="img-container">
+          <img src="img/work4.jpg" alt="work4">
+        </div>
+        <div class="img-container">
+          <img src="img/work5.jpg" alt="work5">
+        </div>
+        <div class="img-container">
+          <img src="img/work6.jpg" alt="work6">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!----------------------- Contact Part ----------------------->
+  <div class="contact" id="contact">
+    <h2 class="heading">Contact</h2>
+
+    <form action="#" method="POST" class="form">
+      <div class="formGroup">
+        <input type="text" id="name" name="name" placeholder="Name" required>
+      </div>
+  
+      <div class="formGroup">
+        <input type="email" id="email" name="email" placeholder="Email" required>
+      </div>
+  
+      <div class="formGroup">
+        <textarea id="message" name="message" rows="10" required></textarea>
+      </div>
+  
+      <div class="submitWrapper">
+        <button type="submit" class="submitBtn">Submit</button>
+      </div>
+    </form>
+  </div>
+
+
+<!----------------------- Footer Part ----------------------->
+  <footer>
+    <h2>Sandip</h2>
+
+    <div class="socialicons">
+      <a href="https://www.facebook.com/groups/basify" target="_blank">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="https://discord.com/invite/wXWmRcTHdZ" target="_blank">
+        <i class="fa-brands fa-discord"></i>
+      </a>
+      <a href="https://chat.whatsapp.com/BLEAmCqOXYbLWIbZVsA5Ms" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </div>
+
+    <h5>&copy; Basify. All rigths reserved</h5>
+  </footer>
+
+</body>
+
+</html>

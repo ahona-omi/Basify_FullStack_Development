@@ -1,0 +1,385 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+ul{
+  list-style-type: none;
+}
+ul li a {
+  text-decoration: none;
+}
+img{
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+.heading {
+  font-size: 36px;
+  color: #3e6ff4;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 10px; 
+}
+.subHead{
+  font-size: 26px;
+}
+/* 
+#0000ee --> blue
+#0d1730 --> light black
+#3e6ff4 --> light blue
+
+*/
+
+/******************* Navigation Part ******************/
+nav{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 250px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav ul{
+  display: flex;
+  flex-direction: row;
+}
+nav ul li{
+  padding-left: 50px;
+  font-weight: 500;
+}
+nav ul li a {
+  color: black;
+  position: relative; /* helps in placing the custom underline */
+  font-weight: 500;
+}
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -7px; /* spacing between text and underline */
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+nav ul li a:hover:after, nav ul li a:active:after {
+  background-color: #3e6ff4;
+}
+
+/******************* Home Part ******************/
+.home{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 250px;
+}
+.homeLeft h1{
+  font-size: 56px;
+  margin: 0;
+}
+.blueText{
+  color: #3e6ff4;
+}
+.contactBtn{
+  background-color: #3e6ff4;
+  color: white;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-top: 20px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.contactBtn:hover{
+  font-size: 18px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.socialicons{
+  margin-top: 70px;
+  font-size: 24px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.socialicons i{
+  padding-right: 30px;
+  color: #0d1730;
+}
+.socialicons i:hover{
+  padding-right: 30px;
+  color: #3e6ff4;
+}
+
+
+/******************* About Part ******************/
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 250px;
+  margin-top: 50px;
+}
+.aboutContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  margin-top: 100px;
+}
+.aboutLeft {
+  flex: 1; /* Allow it to take up available space */
+}
+.aboutRight {
+  flex: 1;
+}
+
+
+/******************* Skills Part ******************/
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 250px;
+  margin-top: 100px;
+}
+
+.skills-container {
+  width: 80%;
+  max-width: 600px;
+}
+.skill-box {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skill-header i{
+  color: #3e6ff4;
+}
+.skill-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.skill-header span {
+  font-size: 18px;
+  font-weight: 600;
+}
+.percentage {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3e6ff4;
+}
+.progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 8px;
+}
+.progress {
+  background-color: #3e6ff4;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.skillRight p{
+  margin-right: 20px;
+}
+.skillLeft{
+  background-image: url(./img/work3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%; 
+  max-width: 550px;
+  height: 330px;
+  border-radius: 10px;
+}
+
+
+/******************* Work Part ******************/
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 250px;
+  margin-top: 100px;
+}
+.workContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.workLeft, .workRight {
+  display: flex;
+  flex-direction: row;
+}
+
+.img-container {
+  width: 100%;
+  max-width: 312px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 12px;
+}
+
+.work img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+
+.work img:hover {
+  transform: scale(1.1);
+}
+
+
+/******************* Contact Part ******************/
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 250px;
+  margin-top: 100px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 250px;
+  margin-top: 50px;
+}
+.form {
+  width: 100%;
+  max-width: 400px;
+  background-color: transparent;
+  padding: 20px;
+}
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formGroup input, 
+.formGroup textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #0d1730;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.formGroup input:focus,
+.formGroup textarea:focus {
+  border-color: #3e6ff4;
+  outline: none;
+}
+
+.formGroup input::placeholder,
+.formGroup textarea::placeholder {
+  color: #999;
+  transition: opacity 0.3s ease;
+}
+.formGroup input:focus::placeholder,
+.formGroup textarea:focus::placeholder {
+  opacity: 0;
+}
+
+.submitWrapper {
+  display: flex;
+  justify-content: flex-end; /* Aligns the button to the right */
+}
+.submitBtn {
+  padding: 15px 30px;
+  background-color: #3e6ff4;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.submitBtn:hover {
+  font-size: 17px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/******************* Footer Part ******************/
+footer{
+  background-color: #0d1730;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 250px;
+  margin-top: 100px;
+}
+footer h2{
+  font-size: 32px;
+}
+footer .socialicons{
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+footer .socialicons i{
+  color: white;
+  margin-top: 0px;
+}
+footer .socialicons i:hover{
+  color: #3e6ff4;
+}
+
+
+
+/******************* Media Query Part ******************/
+@media (max-width: 1250px) {
+  body {
+    margin: 0 20px;
+  }
+  img{
+    max-width: 350px;
+  }
+
+  .home, .about, nav{
+    padding: 0 20px;
+  }
+  .homeLeft h1{
+    font-size: 55px;
+  }
+
+  .skill, .work {
+    padding: 0px 10px;
+  }
+}
+
+
