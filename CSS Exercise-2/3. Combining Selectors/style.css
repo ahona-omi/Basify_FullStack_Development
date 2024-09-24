@@ -1,0 +1,21 @@
+h1, h2{
+    color: blueviolet;
+}
+h3{
+    font-weight: bold;
+}
+
+.line{
+    color: brown;
+}
+
+.itemBl{
+    color: blue;
+}
+.itemGn{
+    color: green;
+}
+
+p{
+    font-size: 11px;
+}

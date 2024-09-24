@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="google" content="notranslate">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Size Grid</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .container {
+            background-color: goldenrod;
+            margin-right: 300px;
+        }
+
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .row div{
+            background-color: #9400d3;
+            color: #fff;
+            margin: 5px;
+            font-size: 50px;
+        }
+
+        .item1{
+            width: 400px;
+        }
+
+        .item2{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Fixed Size Grid</h1>
+    <div class="container">
+        <div class="row" style="height: 120px;">
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+        </div>
+
+        <div class="row" style="height: 200px;">
+            <div class="item1">3</div>
+            <div class="item2">4</div>
+        </div>
+    </div>
+</body>
+
+</html>

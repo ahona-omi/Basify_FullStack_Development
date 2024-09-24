@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid Sizing Exercise</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            background-color: #f0f0f0;
+            margin: 8px;
+        }
+
+        .container1{
+            display: grid;
+            grid-template-rows: 1fr 1fr 2fr;
+            grid-template-columns: auto 400px minmax(200px, 500px);
+            grid-auto-rows: 50px;
+            width: 80%;
+            background-color: #ddd;
+            padding: 20px;
+            margin: 2rem;
+        }
+
+        .item {
+            font-size: 18px;
+            color: white;
+            background-color: seagreen;
+            padding: 20px;
+            border: 2px solid white;
+        }
+
+        .container2{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            background-color: #ddd;
+            padding: 20px;
+            margin: 2rem;
+        }
+
+        .item2{
+            font-size: 18px;
+            color: white;
+            background-color: #9400d3;
+            padding: 20px;
+            border: 2px solid goldenrod;
+        }
+
+        .container3{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            background-color: transparent;
+            padding: 20px;
+            margin: 2rem;
+            justify-content: center;
+        }
+
+        textarea{
+            height: 400px;
+        }
+
+        button{
+            background-color: cornflowerblue;
+            color: white;
+            padding: 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 18px;
+            width:max-content;
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Grid Sizing Exercise</h1>
+
+    <div class="container1">
+        <div class="item">width expands to fill space</div>
+        <div class="item">400px wide</div>
+        <div class="item">min 200px max 500px wide</div>
+        <div class="item">width expands to fill space</div>
+        <div class="item">400px wide</div>
+        <div class="item">min 200px max 500px wide</div>
+        <div class="item">width expands to fill space</div>
+        <div class="item">400px wide</div>
+        <div class="item">min 200px max 500px wide</div>
+        <div class="item">50px high</div>
+    </div>
+
+    <div class="container2">
+        <div class="item2">width expands to fill space</div>
+        <div class="item2">400px wide</div>
+        <div class="item2">min 200px max 500px wide</div>
+        <div class="item2">width expands to fill space</div>
+        <div class="item2">400px wide</div>
+        <div class="item2">min 200px max 500px wide</div>
+        <div class="item2">width expands to fill space</div>
+        <div class="item2">400px wide</div>
+        <div class="item2">min 200px max 500px wide</div>
+        <div class="item2">50px high</div>
+    </div>
+
+    <div class="container3">
+        <textarea name="" id="">
+            /* Write your CSS code below to make the purple items size, grow and shrink like the green ones.*/
+            .grid-container {
+                
+            }
+        </textarea>
+
+        <button>Apply CSS</button>
+    </div>
+</body>
+
+
+
+</html>
